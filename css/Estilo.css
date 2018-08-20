@@ -1,0 +1,85 @@
+/*.footer {
+   position: fixed-bottom;
+   left: 0px;
+   bottom: 0px;
+   width: 100%;
+   background-color: #9CFADB;
+   color: white;
+   text-align: center;
+}*/
+
+footer {
+        text-align: right;
+        font-family: sans-serif;
+        color: black;
+        height: 20px;
+        width: 100%;
+        bottom: 0px;
+        overflow: hidden;
+        position: fixed-bottom;
+        background-color: #9CFADB;
+    }
+
+/*navbar*/
+nav.navbar-inverse { background-color: #9CFADB}
+nav.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #9CFADB}
+nav.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #7CC7AE}
+nav.dropdown-menu { background-color: #FFFFFF}
+nav.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #FFFFFF}
+nav.navbar-inverse { background-image: none; }
+nav.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+nav.navbar-inverse { border-color: #9CFADB}
+nav.navbar-inverse .navbar-brand { color: #FFFFFF}
+nav.navbar-inverse .navbar-brand:hover { color: #BABABA}
+nav.navbar-inverse .navbar-nav>li>a { color: #FFFFFF}
+nav.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #BABABA}
+nav.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF}
+nav.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #BABABA}
+nav.dropdown-menu>li>a { color: #BABABA}
+nav.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #424242}
+nav.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
+nav.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #BABABA}
+nav.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
+nav.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #BABABA}
+
+========================================================/* FORMULARIO */========================================================
+
+table {
+    /* Sólo para centrar el formulario a la página */
+    margin: 0 auto;
+    width: 600px;
+    /* Para ver el borde del formulario */
+    padding: 10px;
+    border: 5px solid #E90808;
+    border-radius: 30px;
+    background-color: #CF0404;
+}
+
+table tr {
+  vertical-align: bottom;
+}
+
+table tr td input {
+	padding: 5px
+	border: 10px solid #CCC;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+input:focus {
+	color: #010101;
+	border-color: #39D244;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 1em;
+	background-color: #9CFADB;
+	border: 1px solid #CCC;
+    border-radius: 1em;
+    color: #FFFFFF
+}
+div button:hover{
+    background-color: #46FF7A;
+    color: #FFF;
+}
