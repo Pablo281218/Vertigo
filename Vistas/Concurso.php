@@ -17,7 +17,7 @@ session_start();
 
 			<br/><br/>
 
-			<table class=" " align="center" border="0" width="50%" cellpadding="0">
+			<table align="center" border="0" width="50%" cellpadding="0">
 
 					<form action="http://localhost/html/Vertigo/Vistas/conectar.php" method="post" >
 
@@ -59,9 +59,7 @@ session_start();
 	</div>
 
 <br><br>
-<div class="footer">
-  <footer>&copy; Verde vertigo, Copiapó 2018</footer>
-</div>
+
 	<script src="../js/jquery.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 </body>

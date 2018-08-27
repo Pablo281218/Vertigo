@@ -75,9 +75,7 @@ if (@!$_SESSION['Usuario']) {
 		    		<button class="botoncon" type="submit">Actualizar</button>
 		    	</div></form>
 </div>
-<div class="footer">
-  <footer><p>&copy; Verde vertigo, Copiapó 2018</p></footer>
-</div>
+
 	<script src="../js/jquery.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 </body>

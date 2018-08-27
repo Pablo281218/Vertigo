@@ -12,11 +12,11 @@ session_start();
 			header("Location: http://localhost/html/Vertigo/Vistas/Administrar.php");
 		}else{
 			echo '<script>alert("CONTRASEÑA INCORRECTA")</script> ';
-			echo "<script>location.href='http://localhost/html/Vertigo/index.php'</script>";
+			echo "<script>location.href='http://localhost/html/Vertigo/vistas/login.php'</script>";
 		}
 	}else{
 	//	
-		 echo '<script>alert("Usuario incorrecto, intentelo de nuevo")</script> ';
+		 echo '<script>alert("No existe este administrador")</script> ';
 		 echo "<script>location.href='http://localhost/html/Vertigo/Vistas/login.php'</script>";
 	}
 

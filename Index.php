@@ -12,45 +12,45 @@ session_start();
 	<title>Verde Vertigo</title>
 </head>
 <body>
+
 <div class="container">
 
-	<?php include('Vistas/Navbar.php');
+	<?php include('Vistas/Navbar.php'); ?>
+	<div class="container-fluid">
+	<table id="tablaindex" class="table table-bordered" style="width: 100%">
+		<tr>
+			
+			<td style="width: 13%" align="center" ><strong> Imagen del producto </strong></td>
+			<td style="width: 13%" align="center" ><strong> Nombre del producto</strong></td>
+			<td style="width: 13%" align="center" ><strong> Cantidad disponible </strong></td>
+			<td style="width: 13%" align="center" ><strong> Precio (CLP) </strong></td>
+
+		</tr>
+	<?php
 	include_once("Vistas/conectar_db.php");
 	$sql = "SELECT idProductos, Nombre, Url, Cantidad, Precio FROM productos";
 	$resultset = mysqli_query($conexion, $sql) or die("Error en la base de datos:". mysqli_error($conexion));
 	while( $record = mysqli_fetch_assoc($resultset) ) {
 	?>
- 
-  <div class="col-md-4">
-    <div class="thumbnail">
-	<div class="card hovercard">
-		<div class="cardheader">
-			<div class="avatar">
-				<img alt="<?php echo $record['Nombre']; ?>" src="data:image/jpg;base64, <?php echo base64_encode($record['Url']);?>" style="width: 100%">
-			</div>
-		</div>
-	<div class="card-body info" align="center">
-		<div class="title">
-			<a><?php echo $record['Nombre']; ?></a>
-		</div>
-	
-		<div class="desc">Cantidad disponible: <?php if($record['Cantidad']==0){
-			echo ('<a style="color: red">Sin stock</a>');
-		}else{
-			echo ($record['Cantidad']); }?> 
-	 </div>
-		<div class="desc">Valor: $<?php echo $record['Precio']; ?></div>
-	</div>
-	</div>
-	</div>
-	</div>
-
+	  		
+	            	<tr>
+						<td style="width: 15%" align="center" ><img alt="<?php echo $record['Nombre']; ?>" src="data:image/jpg;base64, <?php echo base64_encode($record['Url']);?>" style= "width: 100%"></td>
+						<td style="width: 13%" align="center" ><?php echo $record['Nombre']; ?></td>
+						<td style="width: 13%" align="center" ><?php if($record['Cantidad']==0){
+							echo ('<a style="color: red">Sin stock</a>');
+							}else{
+							echo ($record['Cantidad']); }?> 
+		 				</td>
+						<td style="width: 13%" align="center" >$<?php echo $record['Precio']; ?></td>
+					</tr>
 	<?php } ?>
-
+	</table>
+	</div>
 </div>
-<br><br>
-<div>
-  <footer>&copy; Verde vertigo, Copiapó 2018</footer>
+			
+			
+
+
 </div>
 
 	<script src="js/jquery.js"></script>

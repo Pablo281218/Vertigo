@@ -112,9 +112,7 @@ if (@!$_SESSION['Usuario']) {
 
 
 </div>
-<div class="footer">
-  <footer><p align="right">&copy; Verde vertigo, Copiapó 2018</p></footer>
-</div>
+
 	<script src="../js/jquery.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 </body>

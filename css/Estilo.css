@@ -1,4 +1,4 @@
-/*.footer {
+.footer {
    position: fixed-bottom;
    left: 0px;
    bottom: 0px;
@@ -6,7 +6,7 @@
    background-color: #9CFADB;
    color: white;
    text-align: center;
-}*/
+}
 
 footer {
         text-align: right;
@@ -83,3 +83,5 @@ div button:hover{
     background-color: #46FF7A;
     color: #FFF;
 }
+
+
