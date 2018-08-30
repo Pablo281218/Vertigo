@@ -8,6 +8,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="http://localhost/html/Vertigo/css/Estilo.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="Funciones.js"></script>
 	<meta charset="utf-8">
 	<title>Verde Vertigo</title>
 </head>
@@ -19,11 +20,11 @@ session_start();
 
 			<table align="center" border="0" width="50%" cellpadding="0">
 
-					<form action="http://localhost/html/Vertigo/Vistas/conectar.php" method="post" >
+					<form action="http://localhost/html/Vertigo/Vistas/conectar.php" method="post" name="form">
 
 				<tr>
 					<td align="left"><label for="Nombres">Nombres:</label></td>
-					<td><br><input class="form-control" required="Nombres" type="text" name="Nombres" placeholder="Escriba sus nombres" /></td>
+					<td><br><input class="form-control"  type="text" name="Nombres" placeholder="Escriba sus nombres" /></td>
 				</tr>
 
 				<tr>
@@ -53,7 +54,7 @@ session_start();
     			<label for="Terminos">Acepta recibir informacion promocional</a></label>
 				</div><br/>
 		    	<div align="center">
-		    		<button type="submit">Enviar datos</button>
+		    		<button type="submit" id="boton">Enviar datos</button>
 				</div>
 				</form>
 	</div>

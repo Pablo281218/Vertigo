@@ -20,23 +20,42 @@ session_start();
 
 	<br>
 	<div class="text-center container col-sm-offset-4 col-sm-3">
-	<form class="form-signin" action="http://localhost/html/Vertigo/Vistas/validar.php" method="post">
+		<table>
+	<form class="form-signin" action="http://localhost/html/Vertigo/Vistas/validar.php" method="post" id="registration_form">
       <img class="mb-4" src="http://localhost/html/Vertigo/img/Logo2.jpg" alt="logo" width="100" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Bienvenido</h1>
-      <label for="inputEmail" class="sr-only">Usuario</label>
-      <input type="text" id="inputEmail" class="form-control" placeholder="Ingrese usuario" required="" autofocus="" name="Usuario">
-      <label for="inputPassword" class="sr-only">Contraseña</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Ingrese contraseña" required="" name="Pass">
+      <tr>
+	      <td><label for="inputEmail">Usuario</label></td>
+	      <td><input type="text" id="form_username" class="form-control" placeholder="Ingrese usuario" required="" autofocus="" name="Usuario"></td>
+	      <td><span class="error_form" id="username_error_message"></span></td>
+	  </tr>
+      	
+	  <tr>
+	      <td><label for="form_password">Contraseña</label></td>
+	      <td><input type="password" id="form_password" class="form-control" placeholder="Ingrese contraseña" required="" name="Pass"></td>
+	      <td><span class="error_form" id="password_error_message"></span></td>
+  	  </tr>
+      	
+
       <div >
         <br>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar sesion</button>
-      <p class="mt-5 mb-3 text-muted">©2018</p>
+      
     </form>
+	</table>
+	<br>
+	<button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar sesion</button>
+      <p class="mt-5 mb-3 text-muted">©2018</p>
+
+    <tr>
+		    
+		    <td><span class="error_form" id="inputPassword"></span></td>
+    </tr>
 	</div>
 	<br>
 </div>
-
+	
+	<script src="Check.js"></script>
 	<script src="../js/jquery.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	
