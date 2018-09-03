@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 	require("conectar_db.php");
 
 	$Usuario=$_POST['Usuario'];
@@ -15,7 +16,7 @@ session_start();
 			echo "<script>location.href='http://localhost/html/Vertigo/vistas/login.php'</script>";
 		}
 	}else{
-	//	
+		
 		 echo '<script>alert("No existe este administrador")</script> ';
 		 echo "<script>location.href='http://localhost/html/Vertigo/Vistas/login.php'</script>";
 	}
